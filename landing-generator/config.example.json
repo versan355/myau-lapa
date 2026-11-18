@@ -5,7 +5,7 @@
   "dataDir": "./data",
   "publicDir": "./published",
   "ai": {
-    "baseUrl": "https://api.polza.ai/v1",
+    "baseUrl": "https://polza.ai/api/v1",
     "apiKeyEnv": "POLZA_API_KEY",
     "model": "deepseek/deepseek-chat"
   }

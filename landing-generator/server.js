@@ -9,7 +9,7 @@ const configPath = path.join(ROOT, 'config.json');
 const config = fs.existsSync(configPath) ? JSON.parse(fs.readFileSync(configPath, 'utf8')) : {
   host: process.env.HOST || '127.0.0.1', port: Number(process.env.PORT || 4317),
   sessionSecret: process.env.SESSION_SECRET || crypto.randomBytes(32).toString('hex'),
-  dataDir: './data', publicDir: './published', ai: { baseUrl: process.env.AI_BASE_URL || '', apiKeyEnv: 'POLZA_API_KEY', model: process.env.AI_MODEL || '' }
+  dataDir: './data', publicDir: './published', ai: { baseUrl: process.env.AI_BASE_URL || 'https://polza.ai/api/v1', apiKeyEnv: 'POLZA_API_KEY', model: process.env.AI_MODEL || 'deepseek/deepseek-chat' }
 };
 const dataDir = path.resolve(ROOT, config.dataDir); const publicDir = path.resolve(ROOT, config.publicDir);
 fs.mkdirSync(dataDir, { recursive: true }); fs.mkdirSync(publicDir, { recursive: true });
