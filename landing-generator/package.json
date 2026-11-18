@@ -1,0 +1,8 @@
+{
+  "name": "landing-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private landing page generator with chat and preview",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}

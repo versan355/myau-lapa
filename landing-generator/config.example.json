@@ -1,0 +1,12 @@
+{
+  "host": "127.0.0.1",
+  "port": 4317,
+  "sessionSecret": "replace-with-a-long-random-secret",
+  "dataDir": "./data",
+  "publicDir": "./published",
+  "ai": {
+    "baseUrl": "https://api.polza.ai/v1",
+    "apiKeyEnv": "POLZA_API_KEY",
+    "model": "deepseek/deepseek-chat"
+  }
+}

@@ -2,3 +2,6 @@
  desktop.png
  mobile.png
  generate-images.ps1
+landing-generator/config.json
+landing-generator/data/
+landing-generator/published/
